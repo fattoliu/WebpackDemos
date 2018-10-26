@@ -1,0 +1,3 @@
+# ** 表示所有包含所有子目录
+**/node_modules
+**/.DS_Store
