@@ -1,6 +1,6 @@
 
 <template>
-    <div>
+    <div id="basicSyntax">
         <div>
             <input type="text" v-model="name"><span v-show="name">你的名字是：{{name}}</span>
         </div>
