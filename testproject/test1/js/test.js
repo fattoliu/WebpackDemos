@@ -18,3 +18,16 @@
 //     alert(user.name);
 // }
 // foo();
+
+var arr = ['aaa', 'bbb'];
+var arr2 = ['aaa'];
+var str = "aaa";
+var arrStr = arr.toString();
+var arr2Str = arr2.toString();
+console.log(arrStr);
+
+if (arr == str) {
+    console.log("两个值相等");
+} else {
+    console.log("两个值不相等");
+}
