@@ -1,20 +1,21 @@
 <template>
-  <div id="app">
-    <basic-syntax />
-    <for-looper />
-    <bind />
-    <on />
-    <on-model />
-    <control />
-    <calculate-attribute />
+    <div id="app">
+        <basic-syntax />
+        <for-looper />
+        <bind />
+        <on />
+        <on-model />
+        <control />
+        <calculate-attribute />
 
-    <parent-and-child-component-community @show-balance="showBalance($event)" v-bind:msg="msg" username="fattoliu"></parent-and-child-component-community>
-    <div class="balance_block" v-if="show_balance">您的余额：{{balance}}亿</div>
-    <div class="balance_block" v-else>余额很隐私Yo.</div>
-    <like />
-    <glq />
-
-  </div>
+        <parent-and-child-component-community @show-balance="showBalance($event)" v-bind:msg="msg" username="fattoliu"></parent-and-child-component-community>
+        <div class="balance_block" v-if="show_balance">您的余额：{{balance}}亿</div>
+        <div class="balance_block" v-else>余额很隐私Yo.</div>
+        <like />
+        <glq />
+        <custom-directive />
+        <mixins />
+    </div>
 </template>
 
 <script>
@@ -29,6 +30,8 @@ import CalculateAttribute from './components/calculateAttribute'
 import ParentAndChildComponentCommunity from './components/子组件与父组件通信'
 import Glq from './components/glq'
 import Like from './components/like'
+import CustomDirective from './components/自定义指令'
+import Mixins from './components/mixins'
 
 export default {
   name: 'App',
@@ -49,7 +52,9 @@ export default {
     CalculateAttribute,
     ParentAndChildComponentCommunity,
     Glq,
-    Like
+    Like,
+    CustomDirective,
+    Mixins
   },
   methods: {
     showBalance: function(obj) {
