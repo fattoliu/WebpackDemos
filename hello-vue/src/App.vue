@@ -14,6 +14,7 @@
         <glq />
         <custom-directive />
         <mixins />
+        <slot-demo />
     </div>
 </template>
 
@@ -31,6 +32,7 @@ import Glq from './components/glq'
 import Like from './components/like'
 import CustomDirective from './components/自定义指令'
 import Mixins from './components/mixins'
+import SlotDemo from './components/slot'
 
 export default {
   name: 'App',
@@ -53,7 +55,8 @@ export default {
     Glq,
     Like,
     CustomDirective,
-    Mixins
+    Mixins,
+    SlotDemo
   },
   methods: {
     showBalance: function(obj) {
