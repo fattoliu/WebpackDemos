@@ -7,7 +7,6 @@
         <on-model />
         <control />
         <calculate-attribute />
-
         <parent-and-child-component-community @show-balance="showBalance($event)" v-bind:msg="msg" username="fattoliu"></parent-and-child-component-community>
         <div class="balance_block" v-if="show_balance">您的余额：{{balance}}亿</div>
         <div class="balance_block" v-else>余额很隐私Yo.</div>
