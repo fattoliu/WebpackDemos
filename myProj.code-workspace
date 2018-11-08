@@ -1,14 +1,14 @@
 {
-  "folders": [
+"folders": [
     {
-      "path": "."
+        "path": "."
     },
     {
-      "path": "/Users/fattoliu/workspace/VueProjects/weiguanw"
+        "path": "/Users/fattoliu/Desktop/weiguanw"
     },
     {
-      "path": "/Users/fattoliu/workspace/VueProjects/SecurityAdvisor"
+        "path": "/Users/fattoliu/Desktop/test-vue-router"
     }
-  ],
+],
   "settings": {}
 }
