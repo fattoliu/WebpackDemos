@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bottom-navigation {
+            display: -webkit-flex;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background: white;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            -webkit-box-shadow: 0 -2px 12px rgba(196, 196, 196, 0.4);
+            -moz-box-shadow: 0 -2px 12px rgba(196, 196, 196, 0.4);
+            box-shadow: 0 -2px 12px rgba(196, 196, 196, 0.4);
+        }
+
+        .bottom-navigation .item {
+            flex: 1;
+            color: #55385F;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+        .bottom-navigation .divider {
+            width: 1px;
+            height: 60%;
+            background: #E86677;
+        }
+
+        .bottom-navigation .current img {
+            width: 19pt;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 0.5rem;
+            height: 21pt;
+        }
+
+        .bottom-navigation .item .count {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: #E86677;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe id="fancybox-frame" name="fancybox-frame1543299516161" frameborder="0" scrolling="no" hspace="0" src="http://i.tianqi.com/index.php?c=code&a=getcode&id=34&h=25&w=280"></iframe>
+    <div class="bottom-navigation">
+        <div class="item current">
+            <img src="./icon_as_of_now.png">
+            <div class="text">截止目前</div>
+        </div>
+        <div class="divider"></div>
+        <div class="item public-place">
+            <div class="count" id="public-place-count">100</div>
+            <div class="text">公共场所 (家)</div>
+        </div>
+        <div class="divider"></div>
+        <div class="item non-public-place">
+            <div class="count" id="non-public-place-count">70</div>
+            <div class="text">非公共场所 (家)</div>
+        </div>
+    </div>
+</body>
+
+</html>

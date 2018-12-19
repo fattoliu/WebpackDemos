@@ -6,11 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        #cities {
+            width: 100%;
+            white-space: nowrap;
+            overflow: scroll;
+            background: gainsboro;
+        }
+
+        #cities::-webkit-scrollbar {
+            display: none;
+        }
+
+        #cities li {
+            display: inline-block;
+            text-align: center;
+            height: 2.88rem;
+            padding: 0.4rem 1rem 0.4rem 1rem;
+            width: 3.6rem;
+            line-height: 2.88rem;
+            font-size: 2.25rem;
+
+        }
+
+        .selected {
+            color: #ed2e33;
+            border-bottom: 0.38rem solid #ed2e33;
+        }
+    </style>
 </head>
 
 <body>
-    <script src="./js/test.js"></script>
-    <!-- <script src="./js/arraytest.js"></script> -->
+    <div id="container">
+        <div>
+            <ul id="cities">
+                <li>杭州</li>
+                <li>宁波</li>
+                <li>嘉兴</li>
+                <li>绍兴</li>
+                <li>金华</li>
+                <li>衢州</li>
+                <li>温州</li>
+                <li>舟山</li>
+                <li>台州</li>
+                <li>丽水</li>
+                <li id="1">杭州<li>
+                <li id="2">宁波<li>
+                <li id="3">温州<li>
+                <li id="4">湖州<li>
+                <li id="5">嘉兴<li>
+                <li id="6">绍兴<li>
+                <li id="7">金华<li>
+                <li id="8">衢州<li>
+                <li id="9">舟山<li>
+                <li id="10">台州<li>
+                <li id="11">丽水</li>
+        </div>
+        </ul>
+    </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $('#cities').children().click(function (e) {
+            e.preventDefault();
+            $(this).siblings('li').removeClass('selected'); // 删除其他兄弟元素的样式
+            $(this).removeClass('selected').addClass("selected");
+        });
+    </script>
 </body>
 
 </html>

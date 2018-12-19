@@ -1,14 +1,11 @@
 {
-"folders": [
-    {
-        "path": "."
-    },
-    {
-        "path": "/Users/fattoliu/Desktop/weiguanw"
-    },
-    {
-        "path": "/Users/fattoliu/Desktop/test-vue-router"
-    }
-],
-  "settings": {}
+    "folders": [
+        {
+            "path": "/Users/fattoliu/Desktop/indexNew"
+        },
+        {
+            "path": "/Users/fattoliu/Desktop/weiguanw"
+        }
+    ],
+    "settings": {}
 }

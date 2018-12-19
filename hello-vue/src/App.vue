@@ -1,5 +1,8 @@
 <template>
     <div id="app">
+        <div class="my-button" @click="changeData">
+            {{val}}
+        </div>
         <basic-syntax />
         <for-looper />
         <bind />
@@ -38,6 +41,7 @@ export default {
   name: 'App',
   data() {
     return {
+        val:'我是demo',
       msg: 'Yo.王花花！',
       show_balance: false,
       balance: 0
@@ -62,10 +66,18 @@ export default {
     showBalance: function(obj) {
       this.show_balance = obj.c
       this.balance = obj.a + obj.b
+    },
+    changeData() {
+        this.val = "我已经改变了";
     }
   }
 }
 </script>
 
 <style scoped>
+.my-button {
+    width: 100%;
+    height: 50px;
+    background: red;
+}
 </style>
