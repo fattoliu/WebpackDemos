@@ -14,7 +14,14 @@
       },
       {
         "path": "/Users/fattoliu/Desktop/WorkVueProjects/haogushi"
+      },
+      {
+        "path": "/Users/fattoliu/ide/apache-tomcat-9/webapps/ROOT/wechat/jiaxing"
       }
     ],
-    "settings": {}
+    "settings": {
+      "svn.delete.ignoredRulesForDeletedFiles": [
+        "dist"
+      ]
+    }
 }
